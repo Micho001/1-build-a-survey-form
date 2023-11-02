@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Flooding causes and preventive measures</p>
+
+    <form id="survey-form">
+      <fieldset>
+          <fieldset>
+            <legend>Personal Information</legend>
+          <label for="name">Name: <input type="text" id="name" placeholder="Enter Your Name" required></label>
+
+          <label for="email">Email: <input type="email" id="email" required placeholder="Enter Your Email" required></label>
+
+          <label for="number">Phone Number: <input type="number" id="number" placeholder="Enter Your Number" min=9 max=14></label>
+  
+  <!-- Select -->
+        <label for="dropdown"> Gender
+          <select id="dropdown">
+            <option hidden>what's your gender</option> 
+            <option>Male</option>
+            <option>female</option>
+            <option>prefer not to say</option>
+          </select>
+        </label>
+        </fieldset>
+        <!-- people / person affected --> 
+          <fieldset>
+            <legend>Someone Affected?</legend>
+          <label for="name-label" id="name-label">Name: <input type="text" id="name-label" placeholder="Enter Your Name" required></label>
+
+          <label for="email-label" id="email-label">Email: <input type="email" id="email-label" required placeholder="Enter Your Email" required></label>
+
+          <label for="number-label" id="number-label">Phone Number: <input type="number" id="number-label" placeholder="Enter Your Number" min=9 max=14></label>
+  
+  <!-- Select -->
+        <label for="dropdown"> Gender
+          <select id="dropdown">
+            <option hidden>what's your gender</option> 
+            <option>Male</option>
+            <option>female</option>
+            <option>prefer not to say</option>
+          </select>
+        </label>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Reasons why people are affected</legend>
+    <!-- Radio -->
+        <fieldset>
+          <legend>have you been a victim?</legend>
+          <label for="affected-personnel"><input type="radio" name="affected?" id="affected-personnel" value="affected-personnel">Yes</label>
+          <label><input type="radio" name="affected?" id="affected-personnel" value="affected?">No</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Causes of flood</legend>
+    <!-- Checkbox -->
+          <label for="causes-of-flood"><input type="checkbox" value="causes-of-flood"/>Bad road</label>
+          <label><input type="checkbox" value="causes-of-flood"/>Poor drainage system</label>
+          <label><input type="checkbox" value="causes-of-flood"/>Overgrazing of land</label>
+          <label><input type="checkbox" value="causes-of-flood"/>More...</label>
+          </fieldset>
+        </fieldset>
+        
+        <!-- Textarea -->
+        <label for="preventive-measures">How can it prevented:<textarea rows=2 cols=30 required id="preventive-measures"></textarea></label>
+
+        <!-- submit -->
+        <input type="submit" value="submit" id="submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
